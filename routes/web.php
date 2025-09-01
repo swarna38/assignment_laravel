@@ -10,3 +10,6 @@ Route::get('/',[HomeController::class,'home'])->name('home');
 Route::get('/projects',[ProjectController::class,'projects'])->name('projects');
 Route::get('/resume',[resumeController::class,'resume'])->name('resume');
 Route::get('/contact',[ContactController::class,'contact'])->name('contact');
+Route::post('/contact-submit',[ContactController::class,'submit'])->name('contact.submit');
+ 
+
